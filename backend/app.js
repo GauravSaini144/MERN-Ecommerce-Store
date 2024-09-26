@@ -9,9 +9,9 @@ import cookieParser from "cookie-parser";
 import bodyParser from "body-parser";
 import fileUpload from "express-fileupload";
 
-if(process.env.NODE_ENV!=="PRODUCTION"){
+
     dotenv.config({path:"backend/config/config.env"});
-    }
+    
 app.use(cors({ 
     credentials: true}));
 app.use(bodyParser.json({ limit: '50mb' }));

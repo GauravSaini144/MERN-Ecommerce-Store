@@ -9,9 +9,9 @@ process.on("uncaughtException",(err)=>{
     process.exit(1);
 });
 
-if(process.env.NODE_ENV!=="PRODUCTION"){
+
 dotenv.config({path:"backend/config/config.env"});
-}
+
 // DB connection------>
 connectDatabase();
 cloudinary.v2.config({
