@@ -1,27 +1,17 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
-
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import NodePolyfillPlugin from 'node-polyfill-webpack-plugin';
+// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [react(),
+    NodePolyfillPlugin()
+  ],
+
   resolve: {
     alias: {
-      'use-sync-external-store/with-selector': 'use-sync-external-store/shim/with-selector.js',
-      
-    },
-  },
-
-  build: {
-    rollupOptions: {
-      output: {
-        manualChunks: {
-          vendor: ['react', 'react-dom'],
-        },
-
-        
-          external: ['path', 'os', 'crypto'],
-        
-      },
-    },
-    chunkSizeWarningLimit: 1000, // Adjust the chunk size limit
-  },
-});
+      path: 'path-browserify',
+      os: 'os-browserify/browser',
+      crypto: 'crypto-browserify'
+    }
+  }
+})
