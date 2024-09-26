@@ -1,17 +1,27 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-import nodePolyfills from 'rollup-plugin-polyfill-node';
 
 export default defineConfig({
-  plugins: [react(), nodePolyfills()],
+  plugins: [react()],
   resolve: {
     alias: {
-      '@mui/icons-material': '@mui/icons-material/esm',
+      'use-sync-external-store/with-selector': 'use-sync-external-store/shim/with-selector.js',
+      
     },
   },
+
   build: {
     rollupOptions: {
-      external: ['path', 'os', 'crypto'],
+      output: {
+        manualChunks: {
+          vendor: ['react', 'react-dom'],
+        },
+
+        
+          external: ['path', 'os', 'crypto'],
+        
+      },
     },
+    chunkSizeWarningLimit: 1000, // Adjust the chunk size limit
   },
 });
