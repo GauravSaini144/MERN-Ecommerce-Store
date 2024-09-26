@@ -8,7 +8,7 @@ import { useParams, useSearchParams } from 'react-router-dom';
 import Pagination from "react-js-pagination"
 import Slider from '@mui/material/Slider';
 import { Typography } from '@mui/material';
-import { Key } from '@mui/icons-material';
+
 import Skeleton from '../Loader/Skeleton.jsx';
 const categories=[
   "laptop",
