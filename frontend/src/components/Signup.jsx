@@ -1,7 +1,7 @@
 import  React, { useState } from 'react';
 import FormImg from "../assets/FormImg.png"
 import { useNavigate } from 'react-router-dom';
-import Person2Icon from '@mui/icons-material/Person2';
+
 import "./Signup.css"
 import { signup, clearErrors } from '../features/users/userSignupApi';
 import { useSelector, useDispatch } from 'react-redux';
