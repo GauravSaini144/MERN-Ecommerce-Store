@@ -1,0 +1,134 @@
+   
+ #TopDiv{
+
+    background-image: linear-gradient(to top, #bdc2e8 0%, #bdc2e8 1%, #e6dee9 100%);
+   height: 100vh;
+ }
+ #Heading{
+
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+.Form{
+    height: 400px;
+     /* width: 300px; */
+    /* border:2px solid black; */
+    border-radius: 20px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    /* margin-left: 20px;
+    margin-right: 20px; */
+    margin: auto;
+    /* margin-top: auto !important; */
+   
+  
+    
+    
+}
+
+.Login{
+margin-top: 50px;
+}
+
+#Image{
+    height: 500px;
+    width: 600px;
+    
+}
+
+.Input{
+    margin: auto;
+    width: 350px;
+    border: 1px solid rgb(48, 45, 45) !important;
+}
+#FileInput{
+    border-radius: 8px;
+}
+@media screen and (max-width:770px) {
+    #ImageDiv{
+        display: none;
+    }
+}
+
+@media screen and (min-width:500px ) and (max-width:769px){
+    .Form{
+        height: 400px;
+         width: 500px;
+        /* border: 2px solid black; */
+        border-radius: 20px;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        margin: auto;
+        margin-top: 25px;
+        
+    }
+    .Login{
+        margin-top: 50px;
+    }
+
+    #ImageDiv{
+        display: none;
+    }
+
+    .Input{
+        width: auto;
+        margin: auto;
+    }
+    
+}
+
+@media screen and (max-width:499px) {
+    .Form{
+        height: 400px;
+        width: 100% !important;
+        /* border: 2px solid black; */
+        border-radius: 20px;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+        justify-content: center;
+        margin-top: 80px !important;
+        
+    }
+    .Login{
+        margin-top: 50px;
+    }
+
+    #ImageDiv{
+        display: none;
+    }
+
+    .Input{
+        width:80%;
+        
+    }
+    
+}
+
+@media screen and (max-width:325px) {
+    
+    .Form{
+        height: 400px;
+        width: 100% !important;
+        /* border: 2px solid black; */
+        border-radius: 20px;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+        justify-content: center;
+        margin-top: 50px !important;
+        
+    }
+   
+
+    #ImageDiv{
+        display: none;
+    }
+
+    .Input{
+        width:90%;
+        
+    }
+    
+}

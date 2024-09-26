@@ -1,0 +1,21 @@
+.main{
+    margin-top: 2vmax;
+    padding: 1vmax;
+
+}
+.main-table{
+    height: 100%;
+    min-height: 80vh;
+    
+}
+.main-table h1{
+    font-size: large;
+    width: 100px;
+    margin: auto;
+    margin-top: 3vmax;
+    align-items: center;
+    color:  #43609C ;
+    font-weight: bolder;
+
+    
+}

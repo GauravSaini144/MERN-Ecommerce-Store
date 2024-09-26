@@ -1,0 +1,61 @@
+.userNotFound{
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.userNotFound h1{
+    font-size: 10vmax;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+    animation: color 5s 0.2s infinite forwards ease-in-out;
+}
+
+.userNotFound p{
+    font-size: 3vmax;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 2vmax;
+    animation: color 5s 0.2s infinite forwards ease-in-out;
+
+    
+
+}
+@keyframes color{
+    0%{
+        color: black;
+    }
+    25%{
+        color: rgb(251, 93, 93);
+
+    }
+    50%{
+        color: rgb(245, 80, 80);
+    }
+    75%{
+        color: rgb(248, 4, 4);
+    }
+
+    100%{
+        color: rgb(206, 0, 0);
+    }
+}
+
+.userNotFound button{
+    padding: 0.5vmax 3vmax;
+    background-color: orangered;
+    color: white;
+    border-radius: 5px;
+    font-weight: bolder;
+    transition: 0.5s ease-in-out;
+}
+
+.userNotFound button:hover{
+   
+    background-color: rgb(253, 87, 26);
+    transform: scale(1.1);
+
+}
+

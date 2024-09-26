@@ -1,0 +1,111 @@
+.dashboard-main{
+    height: 100%;
+    min-height: 90vh;
+    /* padding: 1vmax; */
+    display: flex;
+    flex-direction: row;
+}
+
+
+.dashboard{
+    height: 100vh;
+    width: 100%;
+    /* background-color: rgb(236, 182, 182); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2vmax;
+    
+}
+
+.dashboard-sidebar{
+    width: 20vmax;
+
+}
+
+.dashboard-heading{
+    margin-top: 3vmax;
+}
+.dashboard-heading h1{
+    font-size: xx-large;
+}
+
+.dashboard-content{
+    display: flex;
+    flex-direction: row;
+    column-gap: 3vmax;
+}
+
+.dashboard-content div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 15vmax;
+    /* background-color: aliceblue; */
+    width: 15vmax;
+    border-radius: 100%;
+    row-gap: 1vmax;
+    padding: 1vmax;
+    /* margin-top: 4vmax; */
+    box-shadow: 0px 0px 15px 1px rgb(163, 162, 162);
+}
+
+.dashboard-content div span{
+    font-size: 2vmax;
+    font-weight: 600;
+}
+.dashboard-content div p{
+    font-size: 1.4vmax;
+    font-weight: 600;
+}
+
+.dashboard-amount{
+    background-color: rgb(238, 73, 73);
+    color: white;
+}
+
+.dashboard-users{
+    background-color: rgb(255, 255, 151);
+}
+.dashboard-orders{
+    background-color: rgb(112, 112, 247);
+    color: white;
+}
+
+@media screen and (max-width:830px) {
+
+    .dashboard-sidebar{
+    width: 30vmax;
+     
+}
+.dashboard-heading h1{
+    font-size: x-large;
+}
+
+.dashboard-content{
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    row-gap: 3vmax;
+}
+
+
+
+}
+@media screen and (max-width:420px) {
+    .dashboard-sidebar{
+        width: 34vmax;}
+
+
+        
+
+
+.dashboard-content{
+    display: flex;
+    flex-direction:column;
+    row-gap: 3vmax;
+}
+
+    
+}

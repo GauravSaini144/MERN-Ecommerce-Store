@@ -1,0 +1,11 @@
+.about-us{
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    row-gap: 4vmax;
+    padding: 3vmax;
+}
+
+.about-us h1{
+    font-size: 4vmax;
+}

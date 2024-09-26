@@ -1,0 +1,28 @@
+.updateOrder{
+    display: flex;
+    flex-direction: column;
+
+}
+.updateOrder form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vmax;
+    /* align-items: center; */
+}
+.updateOrder form label{
+    width: 20vmax;
+}
+.updateOrder form label select{
+    width: 20vmax;
+}
+
+.updateOrder form button{
+    background-color: rgb(255, 115, 64);
+    padding: 1vmax 2vmax;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+
+    width: 20vmax;
+    
+}

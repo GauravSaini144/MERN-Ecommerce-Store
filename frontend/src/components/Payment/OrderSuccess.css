@@ -1,0 +1,29 @@
+.success-main{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    row-gap: 3vmax;
+}
+.Icon-img img{
+    height: 20vmax;
+}
+.success-msg h1{
+    font-size: 3vmax;
+}
+
+.actionBtn{
+    display: flex;
+    flex-direction: row;
+    column-gap: 2vmax;
+}
+.actionBtn button{
+    background-color: rgb(255, 128, 59);
+    padding: 1vmax 2vmax;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    
+}

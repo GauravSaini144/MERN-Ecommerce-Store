@@ -1,0 +1,105 @@
+.new-product-main{
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    /* background-color: rgb(236, 182, 182); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2vmax;
+}
+
+.new-product-heading{
+    margin-top: 3vmax;
+}
+.new-product-heading h1{
+    font-size: xx-large;
+}
+
+.new-product-form{
+    height: 100%;
+    /* width: 100%; */
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    row-gap: 1vmax;
+
+}
+
+.create-btn{
+    background-color: rgb(255, 102, 47);
+    padding: 0.6vmax 1vmax;
+    border-radius: 10px;
+    font-size: larger;
+    transition: 0.5s ease-out;
+    color: white;
+    
+}
+
+.create-btn:hover{
+    background-color: rgb(255, 137, 94);
+    transform: scale(1.01);
+
+}
+.upload-preview{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 5px;
+    align-items: center;
+
+}
+
+.file-field{
+    width:26vmax;
+}
+.upload-preview img{
+    width: 50px;
+}
+
+.Form-field{
+    width:26vmax;
+}
+.field{
+    width: 100% !important;
+}
+
+@media screen and (max-width:1000px){
+    
+    .Form-field{
+        width:40vmax;
+    }
+    
+    
+}
+@media screen and (max-width:600px) {
+
+
+.new-product-heading h1{
+    font-size: x-large;
+
+}
+.Form-field{
+    width:40vmax;
+}
+
+
+
+
+  
+}
+
+
+@media screen and (max-width:420px) {
+    .Form-field{
+        width:30vmax;
+    }
+    .field{
+        width: 100%;
+    }
+    .new-product-heading h1{
+        font-size: large;
+    }
+    
+}

@@ -1,0 +1,103 @@
+.stepper{
+    margin-top: 2vmax;
+    margin-bottom: 2vmax;
+}
+.card-info-main{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    min-height: 90vh;
+    align-items: center;
+    /* justify-content: center; */
+    margin-top: 7vmax;
+    row-gap: 2vmax;
+}
+.card-info-main p{
+    font-size: larger;
+    
+
+}
+.card-info-main p hr{
+    height: 2px;
+    width: 100%;
+    background-color: black;
+}
+
+.card-input{
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    column-gap: 20px;
+    
+}
+
+.card-form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    width: 20%;
+    
+}
+
+.card-field{
+    width: 100%;
+
+}
+
+.pay-button{
+    background-color: #ff874b;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: large;
+    transition: 0.5s ease-out;
+}
+.pay-button:hover{
+    background-color: #ff925c;
+    transform: scale(1.05);
+
+}
+
+@media screen and (max-width:1100px) {
+    .card-form{
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+        width: 30%;
+        
+    }
+}
+
+@media screen and (max-width:830px) {
+    .card-form{
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+        width: 40%;
+        
+    }
+}
+
+
+@media screen and (max-width:580px) {
+    .card-form{
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+        width: 50%;
+        
+    }
+}
+
+@media screen and (max-width:430px) {
+    .card-form{
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+        width: 70%;
+        
+    }
+}
+

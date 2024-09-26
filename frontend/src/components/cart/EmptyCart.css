@@ -1,0 +1,40 @@
+.empty-cart{
+    height: 100vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   /* justify-content: center; */
+
+}
+.empty-img{
+    margin-top: 10vmax;
+}
+.empty-img img{
+    height: 10vmax;
+}
+
+.empty-msg{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5vmax;
+    margin-top: 5vmax;
+    align-items: center;
+    justify-content: center;
+    
+}
+.empty-msg p{
+    font-size: 4vmax;
+}
+.empty-msg button{
+    background: orange;
+    padding: 1vmax 10px;
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.5s ease-in;
+}
+
+.empty-msg button:hover{
+    transform: scale(1.1);
+}
+
+

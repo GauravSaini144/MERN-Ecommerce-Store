@@ -1,0 +1,12 @@
+.loader{
+    display: flex;
+    height: 100vh;
+    max-height: 100%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+.loader span{
+    margin: 4px ;
+    
+}

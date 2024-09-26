@@ -1,0 +1,213 @@
+.profile-container{
+    display: flex;
+    flex-direction: row;
+    height: 80vh;
+    width: 100%;
+    /* border: 2px solid black; */
+    margin-bottom: 2vmax;
+}
+.left-side{
+    display: flex;
+    /* border: 2px solid black; */
+    flex-direction: column;
+    width: 40%;
+    /* background-color: aqua; */
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.right-side{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    /* background-color: blue; */
+    align-items: start;
+    justify-content: center;
+    
+}
+
+.left-side img{
+    height: 20vmax;
+    width: 20vmax;
+    border-radius: 47% 53% 64% 36% / 51% 30% 70% 49% ;
+    /* padding: 1vmax; */
+}
+.username{
+    font-size: 2vmax;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    /* background-color: aliceblue; */
+    border-radius: 10px;
+}
+.username p{
+  color: gray;
+  width: 15vmax;
+}
+.email{
+    font-size: 2vmax;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    /* background-color: aliceblue; */
+    margin-top: 4px;
+    border-radius: 10px;
+}
+.email p{
+    color: gray;
+    /* width: 15vmax; */
+    
+  }
+
+.edit-logo{
+
+    position: relative;
+    left: 10%;
+    transform: scale(2);
+    transition: 0.5s all;
+}
+
+.edit-logo:hover{
+    transform: scale(1.9);
+}
+
+
+.profile-btn{
+    display: flex;
+  
+
+}
+
+.profile-btn button{
+    margin:2vmax 1vmax ;
+    background-color: #fb641b;
+
+    
+    padding: 0.7vmax 1.5vmax;
+    color: white;
+    font-weight: bolder;
+    transition: 0.5s all;
+}
+.profile-btn button:hover{
+    transform: scale(1.05);
+    background-color: #ff874b;
+
+}
+
+.profile-heading{
+    position: relative;
+    bottom: 8%;
+    font-size: 3vmax;
+}
+
+@media screen and (max-width:1050px) {
+    .edit-logo{
+
+        position: relative;
+        left: 10%;
+        transform: scale(1.4);
+    
+    
+    
+    }
+
+
+}
+  @media screen and (max-width:530px) {
+
+    .profile-container{
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    width: 100%;
+    /* border: 2px solid black; */
+    margin-bottom: 2vmax;
+    /* align-items: center; */
+
+}
+
+.left-side{
+    display: flex;
+    /* border: 2px solid black; */
+    width: 100%;
+    /* background-color: aqua; */
+    height: 40%;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-side img{
+    height: 18vmax;
+    width: 18vmax;
+    border-radius: 47% 53% 64% 36% / 51% 30% 70% 49% ;
+    /* padding: 1vmax; */
+}
+
+.right-side{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 40%;
+    /* background-color: blue; */
+    align-items: center;
+    justify-content: center;
+    /* margin-left: 10px; */
+    
+}
+.edit-logo{
+
+    position: relative;
+    left: 10%;
+    transform: scale(1);
+
+}
+
+.username{
+    font-size: 2vmax;
+    display: flex;
+    flex-direction: column;
+    /* padding: 10px; */
+    /* background-color: aliceblue; */
+    /* border-radius: 10px; */
+    align-items: center;
+}
+.username p{
+    display: flex;
+  color: gray;
+  /* width: 10vmax; */
+  align-items: center;
+  justify-content: center;
+}
+.email{
+    font-size: 2vmax;
+    display: flex;
+    flex-direction: column;
+    /* padding: 10px; */
+    /* background-color: aliceblue; */
+    margin-top: 4px;
+    /* border-radius: 10px; */
+    align-items: center;
+}
+.email p{
+    color: gray;
+    /* width: 10vmax; */
+    
+  }
+  .profile-btn{
+    display: flex;
+    flex-direction: column;
+
+}
+.profile-btn button{
+    margin:2vmax 1vmax ;
+    background-color: #fb641b;
+   font-size: 2vmax;
+    
+    padding: 0.7vmax 1.5vmax;
+    color: white;
+    font-weight: bolder;
+    transition: 0.5s all;
+}
+
+  }

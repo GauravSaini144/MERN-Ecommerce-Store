@@ -1,0 +1,20 @@
+.reviewCard{
+    
+   flex:none;
+   /* border: 1px solid black; */
+   border-radius: 10px;
+   width:30vmax;
+   display:flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: baseline;
+   margin:1vmax;
+   padding: 3vmax;
+   background-color: rgb(255, 255, 255);
+
+}
+.reviewUser{
+   font-weight: bold;
+
+   
+}

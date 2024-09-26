@@ -1,0 +1,19 @@
+.contact-us{
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vmax;
+    padding: 3vmax;
+}
+
+.contact-us h1{
+    font-size: 4vmax;
+}
+.contact-us h2{
+    font-size: 3vmax;
+}
+
+.contact-us div{
+    padding: 2vmax;
+    
+}
