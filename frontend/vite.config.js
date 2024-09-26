@@ -4,7 +4,7 @@ import NodePolyfillPlugin from 'node-polyfill-webpack-plugin';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(),
-    NodePolyfillPlugin()
+   new NodePolyfillPlugin()
   ],
 
   resolve: {
