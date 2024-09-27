@@ -44,7 +44,7 @@ function App() {
   const [stripeApiKey, setStripeApiKey]=useState("");
   
   const getStripeApiKey=async()=>{
-    const {data}=await axios.get("http://localhost:8080/api/v1/stripeapikey",{withCredentials: true});
+    const {data}=await axios.get("https://trendy-ecommerce-store-6bvp.onrender.com/api/v1/stripeapikey",{withCredentials: true});
     setStripeApiKey(data.stripeApiKey);
   
 

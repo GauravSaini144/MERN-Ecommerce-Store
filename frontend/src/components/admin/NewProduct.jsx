@@ -36,7 +36,9 @@ function NewProduct() {
     "shirt",
     "shoes",
     "tshirt",
-    "bag"
+    "bag",
+    "Mens",
+    "Womens",
   ];
 
   const [name, setName]=useState("");

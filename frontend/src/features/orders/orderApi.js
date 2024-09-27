@@ -10,7 +10,7 @@ export const createOrder=(order)=>async(dispatch)=>{
             },
             withCredentials:true,
         };
-        const {data}=await axios.post("http://localhost:8080/api/v1/order/new", order, config);
+        const {data}=await axios.post("https://trendy-ecommerce-store-6bvp.onrender.com/api/v1/order/new", order, config);
         dispatch(createOrderSuccess(data.order));
         
     } catch (error) {

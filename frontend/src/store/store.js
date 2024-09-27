@@ -1,5 +1,5 @@
 import {configureStore} from "@reduxjs/toolkit";
-import {thunk} from "redux-thunk";
+
 import {composeWithDevTools} from "@redux-devtools/extension";
 import productReducers from "../features/products/productSlice.js"
 import productDetailReducers from "../features/products/DetailSlice.js"
@@ -22,7 +22,7 @@ import allUserReducers from "../features/users/allUserSlice.js";
 import removeUserReducers from "../features/users/removeUserSlice.js";
 import userDetailsReducers from "../features/users/userDetailsSlice.js";
 import updateUserReducers from "../features/users/updateUserSlice.js";
-const middleware=[thunk];
+
 export const store = configureStore({
 
 reducer:{

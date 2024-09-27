@@ -5,7 +5,7 @@ export const getAdminProducts=()=>async(dispatch)=>{
  try {
     dispatch(adminProductsRequest());
 
-    const {data}=await axios.get("http://localhost:8080/api/v1/admin/products",{withCredentials:true});
+    const {data}=await axios.get("https://trendy-ecommerce-store-6bvp.onrender.com/api/v1/admin/products",{withCredentials:true});
     dispatch(adminProductsSuccess(data.products));
 
 

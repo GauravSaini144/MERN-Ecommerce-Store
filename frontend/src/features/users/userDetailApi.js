@@ -5,7 +5,7 @@ export const getAdminUserDetail=(id)=>async(dispatch)=>{
     try {
 
         dispatch(userDetailRequest());
-        const {data}=await axios.get(`http://localhost:8080/api/v1/admin/user/${id}`, {withCredentials:true});
+        const {data}=await axios.get(`https://trendy-ecommerce-store-6bvp.onrender.com/api/v1/admin/user/${id}`, {withCredentials:true});
         dispatch(userDetailSuccess(data.user));
     } catch (error) {
 

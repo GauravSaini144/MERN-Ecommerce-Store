@@ -4,7 +4,7 @@ import { addShippingInfo, addToCart , removeFromCart} from "./cartSlice";
 
 export const addItemsToCart=(id, quantity)=>async(dispatch, getState)=>{
 
-    const {data}=await axios.get(`http://localhost:8080/api/v1/product/${id}`);
+    const {data}=await axios.get(`https://trendy-ecommerce-store-6bvp.onrender.com/api/v1/product/${id}`);
     dispatch(addToCart({
         product:data.product._id,
         name:data.product.name,
@@ -19,7 +19,7 @@ localStorage.setItem("cartItems", JSON.stringify(getState().Cart.cartItems));
 }
 
 export const removeItem=(id)=>async(dispatch, getState)=>{
-    const {data}=await axios.get(`http://localhost:8080/api/v1/product/${id}`);
+    const {data}=await axios.get(`https://trendy-ecommerce-store-6bvp.onrender.com/api/v1/product/${id}`);
     dispatch(removeFromCart({
         product:data.product._id
        

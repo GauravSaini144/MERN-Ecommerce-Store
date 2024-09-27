@@ -18,7 +18,9 @@ const categories=[
   "shirt",
   "shoes",
   "tshirt",
-  "bag"
+  "bag",
+  "Mens",
+  "Womens",
 
 ]
 function  Products() {

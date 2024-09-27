@@ -149,8 +149,8 @@ function Navbar() {
     <ul>
       <li><Link to={"/"}>Home</Link></li>
       <li><Link to={"/products"}>Products</Link></li>
-      <li><Link to={"/products/?name=mens"}>Mens</Link></li>
-      <li><Link to={"/products/?name=womens"}>Womens</Link></li>
+      <li><Link to={"/products/?name=Mens"}>Mens</Link></li>
+      <li><Link to={"/products/?name=Womens"}>Womens</Link></li>
       <li><Link to={"/products/?name=shoes"}>Shoes</Link></li>
       <li><Link to={"/about"}>About Us</Link></li>
       <li><Link to={"/contact"}>Contact Us</Link></li>

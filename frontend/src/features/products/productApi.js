@@ -6,9 +6,9 @@ export const getProduct=(keyword="", currentPage=1, price=[0,150000], category)=
         dispatch(allProductRequest());
         let link;
         if(category){
-         link=`http://localhost:8080/api/v1/products?keyword=${keyword}&page=${currentPage}&price[gte]=${price[0]}&price[lte]=${price[1]}&category=${category}`;}
+         link=`https://trendy-ecommerce-store-6bvp.onrender.com/api/v1/products?keyword=${keyword}&page=${currentPage}&price[gte]=${price[0]}&price[lte]=${price[1]}&category=${category}`;}
         else{
-         link=`http://localhost:8080/api/v1/products?keyword=${keyword}&page=${currentPage}&price[gte]=${price[0]}&price[lte]=${price[1]}`;
+         link=`https://trendy-ecommerce-store-6bvp.onrender.com/api/v1/products?keyword=${keyword}&page=${currentPage}&price[gte]=${price[0]}&price[lte]=${price[1]}`;
 
         }
         const {data}=await axios.get(link);

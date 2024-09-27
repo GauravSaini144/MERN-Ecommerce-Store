@@ -47,7 +47,9 @@ function UpdateOrder() {
     }
 
   return (
-   <>{order&&
+   <>
+   <title>Trendy Update Order</title>
+   {order&&
    
    
     

@@ -50,7 +50,7 @@ function Payment({secret, apiKey}) {
       },
       withCredentials:true,
     };
-    const {data}=await axios.post("http://localhost:8080/api/v1/payment/process",paymentData,config);
+    const {data}=await axios.post("https://trendy-ecommerce-store-6bvp.onrender.com/api/v1/payment/process",paymentData,config);
     console.log(data);
     const client_secret=data.client_secret;
    

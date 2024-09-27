@@ -12,7 +12,7 @@ try {
         withCredentials:true,
     };
 
-    const {data}=await axios.put(`http://localhost:8080/api/v1/admin/user/${id}`, userData, config);
+    const {data}=await axios.put(`https://trendy-ecommerce-store-6bvp.onrender.com/api/v1/admin/user/${id}`, userData, config);
 
     dispatch(updateUserSuccess(data.success));
 

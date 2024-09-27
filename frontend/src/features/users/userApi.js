@@ -6,7 +6,7 @@ export const login=(email,password)=>async(dispatch)=>{
         dispatch(loginRequest());
         const config ={ withCredentials: true,headers:{'Content-Type':'application/json'}};
         const {data}=await axios.post(
-            'http://localhost:8080/api/v1/login',
+            'https://trendy-ecommerce-store-6bvp.onrender.com/api/v1/login',
             {email,password},
             config
         );

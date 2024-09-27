@@ -10,7 +10,7 @@ export const adminUpdateOrder=(id, orderData)=>async(dispatch)=>{
             },
             withCredentials:true,
         };
-        const {data}=await axios.put(`http://localhost:8080/api/v1/admin/order/${id}`, orderData, config);
+        const {data}=await axios.put(`https://trendy-ecommerce-store-6bvp.onrender.com/api/v1/admin/order/${id}`, orderData, config);
         dispatch(updateOrderSuccess(data.success));
     } catch (error) {
         

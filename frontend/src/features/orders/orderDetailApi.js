@@ -5,7 +5,7 @@ export const getOrderDetails=(id)=>async(dispatch)=>{
     try {
         dispatch(orderDetailsRequest());
 
-        const {data}=await axios.get(`http://localhost:8080/api/v1/order/${id}`, {withCredentials:true});
+        const {data}=await axios.get(`https://trendy-ecommerce-store-6bvp.onrender.com/api/v1/order/${id}`, {withCredentials:true});
         dispatch(orderDetailsSuccess(data.order));
     } catch (error) {
 

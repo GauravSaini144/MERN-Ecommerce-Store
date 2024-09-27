@@ -6,7 +6,7 @@ export const forgotPassword=(email)=>async(dispatch)=>{
         const config ={ withCredentials: true,headers:{'Content-Type':'application/json'}};
 
         dispatch(forgotPasswordRequest());
-        const {data}=await axios.post("http://localhost:8080/api/v1/password/forgot",email,config);
+        const {data}=await axios.post("https://trendy-ecommerce-store-6bvp.onrender.com/api/v1/password/forgot",email,config);
          
         dispatch(forgotPasswordSuccess(data.message));
         
@@ -22,7 +22,7 @@ try {
     const config ={ withCredentials: true,headers:{'Content-Type':'application/json'}};
 
     dispatch(forgotPasswordRequest());
-    const {data}=await axios.put(`http://localhost:8080/api/v1/password/reset/${token}`,passwords, config);
+    const {data}=await axios.put(`https://trendy-ecommerce-store-6bvp.onrender.com/api/v1/password/reset/${token}`,passwords, config);
     dispatch(passwordResetSuccess(data.success));
     
 } catch (error) {

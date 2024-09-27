@@ -11,7 +11,7 @@ export const createNewProduct=(productData)=>async(dispatch)=>{
             },
             withCredentials:true,
         };
-        const {data}=await axios.post("http://localhost:8080/api/v1/admin/product/new",productData,config);
+        const {data}=await axios.post("https://trendy-ecommerce-store-6bvp.onrender.com/api/v1/admin/product/new",productData,config);
         dispatch(newProductSuccess(data));
       
 

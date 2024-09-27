@@ -3,7 +3,7 @@ import {logoutRequest, logoutSuccess, logoutFail, clearLogoutErrors} from "./use
 export const logout=()=>async(dispatch)=>{
     try{
         dispatch(logoutRequest());
-       await axios.get("http://localhost:8080/api/v1/logout",{
+       await axios.get("https://trendy-ecommerce-store-6bvp.onrender.com/api/v1/logout",{
         withCredentials:true
        });
         dispatch(logoutSuccess());

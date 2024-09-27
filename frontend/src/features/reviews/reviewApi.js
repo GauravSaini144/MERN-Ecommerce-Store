@@ -13,7 +13,7 @@ export const addReview=(reviewData)=>async(dispatch)=>{
     }
     dispatch(newReviewRequest());
 
-    const {data}=await axios.put("http://localhost:8080/api/v1/review", reviewData, config);
+    const {data}=await axios.put("https://trendy-ecommerce-store-6bvp.onrender.com/api/v1/review", reviewData, config);
 
     dispatch(newReviewSuccess(data.success));
 
