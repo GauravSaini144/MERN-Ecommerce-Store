@@ -85,26 +85,26 @@ function App() {
     
     }
 
-    {isAuthenticated?<Route path='/account/update' element={<UpdateProfile/>} />:<Route exact path='/account' element={<PageNotFound/>} />}
+    {isAuthenticated?<Route path='/account/update' element={<UpdateProfile/>} />:<Route exact path='/account/update' element={<PageNotFound/>} />}
 
-    {isAuthenticated?<Route path='/account/password/update' element={<UpdatePassword/>} />:<Route exact path='/account' element={<PageNotFound/>} />}
+    {isAuthenticated?<Route path='/account/password/update' element={<UpdatePassword/>} />:<Route exact path='/account/password/update' element={<PageNotFound/>} />}
    
     { isAuthenticated?<Route path='/cart' element={<Cart/>} />:<></>}
     { isAuthenticated?<Route path='/shipping' element={<Shipping/>} />:<></>}
-{stripeApiKey && isAuthenticated?<Route path='/process/payment' element={<Elements stripe={loadStripe(stripeApiKey)}><Payment  apiKey={stripeApiKey}/></Elements>} />:<Route exact path='/account' element={<PageNotFound/>} />}
-{ isAuthenticated?<Route path='/success' element={<OrderSuccess/>} />:<Route exact path='/account' element={<PageNotFound/>} />}
-{ isAuthenticated?<Route path='/orders' element={<MyOrder/>} />:<Route exact path='/account' element={<PageNotFound/>} />}
+{stripeApiKey && isAuthenticated?<Route path='/process/payment' element={<Elements stripe={loadStripe(stripeApiKey)}><Payment  apiKey={stripeApiKey}/></Elements>} />:<Route exact path='/process/payment' element={<PageNotFound/>} />}
+{ isAuthenticated?<Route path='/success' element={<OrderSuccess/>} />:<Route exact path='/success' element={<PageNotFound/>} />}
+{ isAuthenticated?<Route path='/orders' element={<MyOrder/>} />:<Route exact path='/orders' element={<PageNotFound/>} />}
 
-{ isAuthenticated?<Route path='/order/confirm' element={<ConfirmOrder/>} />:<Route exact path='/account' element={<PageNotFound/>} />}
-{ isAuthenticated?<Route path='/order/:id' element={<OrderDetails/>} />:<Route exact path='/account' element={<PageNotFound/>} />}
-{ isAuthenticated && user.user.role==="admin"?<Route path='/admin/dashboard' element={<Dashboard/>} />:<Route exact path='/account' element={<PageNotFound/>} />}
-{ isAuthenticated && user.user.role==="admin"?<Route path='/admin/products' element={<ProductList/>} />:<Route exact path='/account' element={<PageNotFound/>} />}
-{ isAuthenticated && user.user.role==="admin"?<Route path='/admin/product' element={<NewProduct/>} />:<Route exact path='/account' element={<PageNotFound/>} />}
-{ isAuthenticated && user.user.role==="admin"?<Route path='/admin/product/:id' element={<UpdateProduct/>} />:<Route exact path='/account' element={<PageNotFound/>} />}
-{ isAuthenticated && user.user.role==="admin"?<Route path='/admin/orders' element={<OrderList/>} />:<Route exact path='/account' element={<PageNotFound/>} />}
-{ isAuthenticated && user.user.role==="admin"?<Route path='/admin/order/:id' element={<UpdateOrder/>} />:<Route exact path='/account' element={<PageNotFound/>} />}
-{ isAuthenticated && user.user.role==="admin"?<Route path='/admin/users' element={<UserList/>} />:<Route exact path='/account' element={<PageNotFound/>} />}
-{ isAuthenticated && user.user.role==="admin"?<Route path='/admin/user/:id' element={<UpdateUserRole/>} />:<Route exact path='/account' element={<PageNotFound/>} />}
+{ isAuthenticated?<Route path='/order/confirm' element={<ConfirmOrder/>} />:<Route exact path='/order/confirm' element={<PageNotFound/>} />}
+{ isAuthenticated?<Route path='/order/:id' element={<OrderDetails/>} />:<Route exact path='/order/:id' element={<PageNotFound/>} />}
+{ isAuthenticated && user.user.role==="admin"?<Route path='/admin/dashboard' element={<Dashboard/>} />:<Route exact path='/admin/dashboard' element={<PageNotFound/>} />}
+{ isAuthenticated && user.user.role==="admin"?<Route path='/admin/products' element={<ProductList/>} />:<Route exact path='/admin/products' element={<PageNotFound/>} />}
+{ isAuthenticated && user.user.role==="admin"?<Route path='/admin/product' element={<NewProduct/>} />:<Route exact path='/admin/product' element={<PageNotFound/>} />}
+{ isAuthenticated && user.user.role==="admin"?<Route path='/admin/product/:id' element={<UpdateProduct/>} />:<Route exact path='/admin/product/:id' element={<PageNotFound/>} />}
+{ isAuthenticated && user.user.role==="admin"?<Route path='/admin/orders' element={<OrderList/>} />:<Route exact path='/admin/orders' element={<PageNotFound/>} />}
+{ isAuthenticated && user.user.role==="admin"?<Route path='/admin/order/:id' element={<UpdateOrder/>} />:<Route exact path='/admin/order/:id' element={<PageNotFound/>} />}
+{ isAuthenticated && user.user.role==="admin"?<Route path='/admin/users' element={<UserList/>} />:<Route exact path='/admin/users' element={<PageNotFound/>} />}
+{ isAuthenticated && user.user.role==="admin"?<Route path='/admin/user/:id' element={<UpdateUserRole/>} />:<Route exact path='/admin/user/:id' element={<PageNotFound/>} />}
 
 
 

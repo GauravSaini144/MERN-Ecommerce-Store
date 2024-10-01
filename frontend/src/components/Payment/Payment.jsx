@@ -11,8 +11,8 @@ import {createOrder, clearError} from "../../features/orders/orderApi.js"
 
 import toast from 'react-hot-toast';
 import { useNavigate } from 'react-router-dom';
-function Payment({secret, apiKey}) {
-  const apikey=secret;
+function Payment({ apiKey}) {
+  
   const navigate=useNavigate();
   const orderInfo=JSON.parse(localStorage.getItem('orderInfo'));
    let netTotal=parseFloat(orderInfo.netTotal);

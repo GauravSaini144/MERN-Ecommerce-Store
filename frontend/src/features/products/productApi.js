@@ -12,7 +12,7 @@ export const getProduct=(keyword="", currentPage=1, price=[0,150000], category)=
 
         }
         const {data}=await axios.get(link);
-        console.log(data);
+
         dispatch(allProductSuccess(data))
 
     }catch(error){

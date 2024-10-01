@@ -34,7 +34,12 @@ function ProductDetail() {
     const {id}=useParams();
 
     const handleClickOpen = () => {
+      if(isAuthenticated===false){
+        toast.error("Login to add review");
+        return;
+      }else{
       setOpen(true);
+      }
     };
     const handleClose = () => {
       setOpen(false);

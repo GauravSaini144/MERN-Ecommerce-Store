@@ -7,7 +7,7 @@ export const loadUser=()=>async(dispatch)=>{
        
         // let id=JSON.parse(localStorage.getItem('id'));
         const {data}=await axios.get("https://trendy-ecommerce-store-6bvp.onrender.com/api/v1/me",{withCredentials: true});
-        console.log(data);
+        
         dispatch(loadUserSuccess(data));
         
     }
